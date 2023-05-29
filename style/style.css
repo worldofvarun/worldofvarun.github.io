@@ -23,7 +23,7 @@ body{
 }
 
 main {
-    max-width: 500px;
+    max-width: 500px !important;
     min-width: 325px;
     margin: 5% auto;
 }
@@ -50,10 +50,13 @@ main {
     width: 100%;
 }
 
+.profile-description{
+    color: white;
+}
+
 .profile-description h1{
     font-size: 2.5rem;
     font-weight: 500;
-    color: white;
 }
 
 .profile-description p{
@@ -96,16 +99,77 @@ main {
     border: none;
 }
 
+.profile-buttons a{
+    text-decoration: none;
+}
+
 .profile-buttons .download-btn{
     background-color: var(--download-btn-color);
     color: var(--download-text-color);
 }
 
+
+
+
+
+.profile-buttons .download-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--download-btn-color);
+    color: var(--download-btn-color);
+}
+
 .profile-buttons  .contact-btn{
     background-color: var(--contact-btn-color);
+}
+
+.profile-buttons  a{
     color: var(--contact-text-color);
 }
 
+.profile-buttons  .contact-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--contact-text-color);
+    color: var(--contact-text-color);
+}
+
+.spotlight-section{
+    color: white;
+    text-align: center;
+
+}
+
+.spotlight-section h3{
+    padding: 20px 10px;
+    font-weight: 500;
+}
+
+
+.spotlight-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 14px;
+}
+
+
+.spotlight-section .project{
+    height: 150px;
+    width: 250px;
+    border-radius: 25px;
+
+}
+
+.project img{
+    height:100%;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 12px;
+    color: var(--text-color);
+}
 
 @media screen and (max-width: 768px){
 
@@ -152,4 +216,19 @@ main {
         font-size: 0.75rem;
     }
 
+    .spotlight-section{
+        display: grid;
+        justify-content: center;
+    }
+
+    .spotlight-section .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 14px;
+    }
+
+    .spotlight-section img{
+        width: 100%;
+        height: auto;
+    }
 }
