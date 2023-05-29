@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #0C151D;
+    --text-color: #A3ABB2;
+    --download-btn-color: #FFE071;
+    --download-text-color: #3D3D3D;
+    --contact-btn-color: #171F26;
+    --contact-text-color: #A3ABB2;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+main {
+    max-width: 500px;
+    min-width: 325px;
+    margin: 5% auto;
+}
+
+.profile-info{
+    color: var(--text-color);
+}
+
+.profile-info .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-info .profile-pic{
+    max-width: 215px;
+    max-height: 215px;
+    color: var(--text-color);
+}
+
+.profile-pic img{
+    height: 100%;
+    width: 100%;
+}
+
+.profile-description h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.profile-description p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.social-media-buttons{
+    display: flex;
+    gap: 26px;
+    padding: 0 10px;
+}
+
+
+.profile-facts .container{
+    padding: 20px 10px;
+    display: flex;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1rem;
+    gap: 90px;
+}
+
+.profile-buttons .container{
+    display: flex;
+    justify-content: center;
+    gap: 2.25rem;
+
+}
+
+.profile-buttons button{
+    height: 3.12rem;
+    padding: 0 3.12rem;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.53px;
+    border-radius: 0.62rem;
+    border: none;
+}
+
+.profile-buttons .download-btn{
+    background-color: var(--download-btn-color);
+    color: var(--download-text-color);
+}
+
+.profile-buttons  .contact-btn{
+    background-color: var(--contact-btn-color);
+    color: var(--contact-text-color);
+}
+
+
+@media screen and (max-width: 768px){
+
+    .profile-info .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info .profile-pic{
+        max-width: 124px;
+        max-height: 124px;
+        color: var(--text-color);
+    }
+
+    .profile-description h1{
+        font-size: 2rem;
+    }
+
+    .profile-description p{
+        font-size: 0.87rem;
+        padding: 10px;
+    }
+
+
+    .social-media-buttons{
+        justify-content: center;
+    }
+
+    .profile-facts .container{
+        justify-content: space-evenly;
+        font-size: 0.8rem;
+        gap: 20px;
+    }
+
+    .profile-buttons .container{
+        justify-content: center;
+        padding: 20px 18px;
+
+    }
+
+    .profile-buttons button{
+        height: 2.75rem;
+        padding: 0 2.75rem;
+        font-size: 0.75rem;
+    }
+
+}
